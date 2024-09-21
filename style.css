@@ -1,0 +1,482 @@
+:root{
+    --sec-color  : #3dafccce ; 
+    --logo-color : #FFFF;
+    --name-color : #ffff;
+    --nav-color  : rgb(0, 0, 0);
+    --auto-type  : black;
+    --ab-color :  #3dafccce;
+    --margin-right : 10%;
+    --margin-left : 10%;
+
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    
+    
+    
+    
+    
+}
+
+.more-content {
+    display: none;
+}
+.more-content-ln{
+    display: none;
+}
+.t-l{
+    color: black;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+  
+
+#sec1{
+    background-color: var(--sec-color) ;
+    height: 100vh;   
+    width: 100vw;
+    
+    
+}
+
+header{
+    display: flex;
+    justify-content:space-between;
+    border-bottom: black;
+    box-shadow: 20px 1.2px 10px white, 5px 5px 5.2px white;
+    /* position: fixed;  ????? */    
+    width: 100%;
+}
+.hL{
+    margin-top: 1vh;
+    float: left;
+    margin-left: 2vw;
+    width: 30%; 
+  
+
+}
+.hL h1{
+    color: var(--logo-color);
+    font-size: 4vw;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    
+    
+}
+.hR{
+    width: 60vw;
+    margin-top: 2%;
+    font-size: 1.5vw ;
+    
+}
+.hR ul {
+    display: flex;
+    text-decoration: none;
+    justify-content: space-evenly;
+    
+}
+.hR ul li {
+   
+    list-style: none;
+    
+}
+.hR ul li a {
+    text-decoration: none;
+    color: var(--nav-color);
+    
+}
+.hR ul li a:hover{
+    cursor: pointer;
+    color: white;
+    transition: 0.3s ;
+    
+
+}
+
+
+.autotype{
+    /* padding: 20vh 10vw; */
+    float: left;
+    margin-top: 10%;
+    width: 40%;
+    margin-left: var(--margin-left);
+    
+   
+}
+.autotype h1{
+    font-size: 7vh;
+
+    font-weight: 900;
+    color: var(--auto-type);
+    
+
+}
+.coloringArshad {
+   color: var(--name-color);
+    font-size: 4vw;
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.photo img{
+    width: 40%;
+    height: 495px;
+    width: 400px;
+    border-radius: 5.5vh;
+    float: right;
+    margin-right: var(--margin-right);
+}
+.photo{
+  margin-top: 2%;
+    /* border: 1px solid black; */
+    
+
+}
+.socilaMedia{
+  display: flex;
+  justify-content:space-between;   
+  width: 50%;
+  
+}
+.socilaMedia a img{
+    height: 40px;
+    width: 40px;
+ 
+}
+.socilaMedia a img:hover{
+    box-shadow: 2px 2px 90px black, 8px 7px 20px black;
+}
+
+/* -----------------------------------------------SEC 2-------------------------------------- */
+#sec2{
+   width: 100vw;
+   height: 100vh;   
+}
+
+.img_about{
+    float: left;
+    margin-top: 4%;
+    margin-left: var(--margin-left);
+}
+.img_about img{
+    height: 490px;
+    width: 400px;
+    border-radius: 5.5vh;
+}
+.about_text{
+    width: 45%;
+    float: right;
+    margin-right: var(--margin-right);
+    margin-top: 5%;
+}
+.about_text h2{
+
+    text-align: center;
+    justify-items: center;
+    text-align: justify;
+}
+ .ab_coloring {
+    color: var(--ab-color);
+}
+
+
+
+
+/* ----------------------------------- Sec 3 ---------------------------------- */
+
+#sec3{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--sec-color);
+}
+.img_ln{
+   
+    float: right;
+    margin-right: var(--margin-right);
+    margin-top: 5%;
+
+}
+.img_ln img {
+    height: 490px;
+    width: 400px;
+    border-radius: 5.5vh;
+}
+
+.ln_text{
+    float: left;
+    margin-top: 4%;
+    margin-left: var(--margin-left);
+    width: 40%;
+    text-align: justify;
+}
+
+
+/* -----------------------------------------sec 4--------------------------------------------- */
+
+#sec4{
+      width: 100vw;
+    height: 140vh;
+
+}
+
+.sp{
+    float: left;
+    margin-left: var(--margin-left);
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap : 10VW;
+    margin-right: var(--margin-right);
+}
+.sp img {
+     height: 300px;
+     width: 250px;
+     border-radius: 5.5vh;
+}
+
+
+/* --------------------------------- Sec 5 -------------------------------- */
+
+#sec5{
+      width: 100%;
+    height: 100%;
+    background-color: var(--sec-color);
+}
+.contact-slider {
+    width: 200px;
+    height: 500px;
+    overflow: hidden;
+    position: relative;
+}
+
+.contact-slide {
+      width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.contact-slide.active {
+    opacity: 1;
+}
+
+.contact-slide img {
+    width: 100px; /* Adjust as per your logo size */
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.arrow img {
+    height: 50px;
+    width: 20px;
+ 
+    
+}
+.arrow{
+    float: right;
+    
+    margin-top: -5%;
+    margin-right: 3%;
+}
+
+
+/* -------------------------- Media for Phone  all Sec-------------------- */
+
+@media (max-width:700px)
+{
+    .coloringArshad {
+        color: var(--name-color);
+         font-size:8vw;
+         font-family: "Roboto Condensed", sans-serif;
+         font-optical-sizing: auto;
+         font-weight: 900;
+         font-style: normal;
+     }
+
+     .autotype h1{
+        font-size: 7vw;
+    
+        font-weight: 900;
+        color: var(--auto-type);
+        
+    
+    }
+    .photo img{
+        height: 300px;
+        width: 250px;
+        border-radius: 5.5vh;
+        
+    }
+
+    .socilaMedia{
+        display: flex;
+        justify-content:space-around;   
+        width: 50%;
+
+        
+      }
+
+      .socilaMedia a img{
+        height: 25px;
+        width: 25px;
+     
+    }
+    .photo{
+         padding: 0vh 20vw;   
+         /* border: 1px solid red; */
+         
+      
+      
+      }
+      .autotype{
+        padding: 10vh 10vw;
+        width: 40%;
+        float: left;
+        
+       
+    }
+
+    /* ---------------------------- sec2 media ---------------------- */
+ 
+    #sec2{
+        width: 100vw;
+        height: 120vh;   
+     }
+    .img_about img{
+        height: 250px;
+        width: 300px;
+        border-radius: 5.5vh;
+    }
+    .about_text{
+     
+       width: 90%;
+        font-size: 12px;
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+    }
+    .about_text h2{
+    
+        text-align: center;
+        justify-items: center;
+        text-align: justify;
+    }
+     .ab_coloring {
+        color: var(--ab-color);
+    }
+    /* ----------------------------------SEC 3 ------------------------------------------ */
+
+    
+#sec3{
+    height: 120vh;
+    width: 100vw;
+    background-color: var(--sec-color);
+}
+.img_ln{
+   
+    float: right;
+    margin-right: var(--margin-right);
+    margin-top: 5%;
+
+}
+.img_ln img {
+    height: 250px;
+    width: 300px;
+    border-radius: 5.5vh;
+}
+
+.ln_text{
+    width: 90%;
+        font-size: 12px;
+        float: left;
+        margin-left: 5%;
+        margin-top: 5%;
+}
+
+    /* ------------------------------- Sec 4---------------------------------- */
+
+    
+#sec4{
+      width: 100vw;
+    height: 260vh;
+}
+
+.sp{
+    float: left;
+    margin-left: 16.5%;
+    display: grid;
+
+    grid-template-columns: repeat(1,1fr);
+    gap : 10VW;
+    
+}
+.sp img {
+     height: 300px;
+     width: 250px;
+     border-radius: 5.5vh;
+     justify-content: center;
+}
+footer h1 {
+    font-size: 20px;
+}
+footer{
+    height: 15vh;
+ 
+}
+.arrow img {
+    height: 50px;
+    width: 20px;
+ 
+    
+}
+.arrow{
+    float: right;
+    margin-top: -15%;
+    margin-right: 3%;
+}
+
+
+}
+
+
+/* ------------------------------- footer ------------------------ */
+
+footer{
+    height: 18%;
+    width: 100%;
+    background-color: black;
+    color: white;
+}
+
+.blink {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 1.5s infinite;
+}
+.blink1 {
+    
+    color: #ff6347; /* Tomato color */
+    animation: blink-animation 3s infinite;
+}
+
+@keyframes blink-animation {
+    0% { opacity: 1; }
+    50% { opacity: 0.5; }
+    100% { opacity: 1; }
+}
